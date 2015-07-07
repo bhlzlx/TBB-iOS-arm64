@@ -1,0 +1,25 @@
+Intel(R) Threading Building Blocks - README
+
+See index.html for directions and documentation.
+
+If source is present (./Makefile and src/ directories),
+type 'gmake' in this directory to build and test.
+
+See examples/index.html for runnable examples and directions.
+
+See http://threadingbuildingblocks.org for full documentation
+and software information.
+
+type command : 
+
+————
+make arch=arm64 compiler=clang target=ios tbb=release
+————
+if you want armv7 version,remove
+
+#define __TBB_WORDSIZE 8
+#define __TBB_64BIT_ATOMICS 1
+
+in tbb_machine.h
+
+good luck!
